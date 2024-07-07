@@ -1,0 +1,33 @@
+pipeline {
+    agent { 
+        node {
+            label 'jenkins-agent'
+            }
+      }
+    stages {
+        stage('Build') {
+            steps {
+                echo "Building.."
+                sh '''
+                echo "Executing build commands..."
+                '''
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Testing.."
+                sh '''
+                echo "This is the test stage.."
+                '''
+            }
+        }
+        stage('Deliver') {
+            steps {
+                echo 'Deliver....'
+                sh '''
+                echo "Executing delivery commands..."
+                '''
+            }
+        }
+    }
+}
