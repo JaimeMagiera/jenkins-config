@@ -13,7 +13,7 @@ podman build -t myjenkins-blueocean:2.452.2 .
 
 ### Generate the SSL Key and Certificate
 
-Use your favorite took to generate an SSL key and certificate. If you want to create a self-signed cert, you can do the flllowing...
+Use your favorite tool to generate an SSL key and certificate. If you want to create a self-signed cert, you can do the flllowing...
 
 ```
 openssl genrsa -des3 -out domain.key 4096
