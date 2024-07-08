@@ -13,6 +13,6 @@ podman run --name jenkins-blueocean \
  	--publish 8443:8443 \
 	--secret=jenkins-opts,type=env,target=JENKINS_OPTS \
 	--volume "$JENKINS_HOME":/var/jenkins_home \
-        myjenkins-blueocean:2.452.2-ssl
+        myjenkins-blueocean:2.452.2
 
 podman container ls
